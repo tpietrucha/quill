@@ -14,5 +14,5 @@ Quill.register(block /* or NewBlock */, true)
   templateUrl: './app.component.html'
 })
 export class AppComponent {
-  title = 'ngx-quill-example'
+  title = 'ngx-quill-mention'
 }

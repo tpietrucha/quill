@@ -1,5 +1,13 @@
-<h3>Mention plugin</h3>
-Do not forget to add quill-mention css to your styles ;)
+Double click word for toolbar appear <br>
+Type "@" for mentioning
+Press shift + B for console.log event
+
+
 <pre><code>{{ content }}</code></pre>
-<quill-editor [(ngModel)]="content" [modules]="modules">
+<quill-editor
+        theme="bubble"
+        [(ngModel)]="content"
+        [modules]="modules"
+        #editor
+        (onEditorCreated)="addBindingCreated($event)">
 </quill-editor>
